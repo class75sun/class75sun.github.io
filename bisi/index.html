@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比思东方-东方文化美学与生活艺术指南</title>
+    <meta name="description" content="比思东方是一个专注于东方美学、传统文化、生活艺术与哲思的在线平台。探索东方建筑、书画、器物、服饰与生活方式，品味东方智慧。" >
+    <meta name="keywords" content="比思东方,东方美学,东方文化,传统艺术,生活美学,东方哲学,东方设计">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STSong", "SimSun", sans-serif;
+            background: #faf8f2;
+            color: #2b2b2b;
+            line-height: 1.7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e8e0d0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+        .brand a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #9e7b4a;
+            font-family: "Songti SC", "SimSun", serif;
+        }
+        .brand span {
+            color: #5f4c3b;
+        }
+        .site-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 36px;
+        }
+        .site-nav a {
+            font-size: 0.95rem;
+            color: #5a4a3a;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .site-nav a:hover, .site-nav a.active {
+            color: #9e7b4a;
+            border-bottom-color: #9e7b4a;
+        }
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: #f4efe6;
+            border-radius: 30px;
+            padding: 6px 16px;
+        }
+        .header-search input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 0.9rem;
+            width: 180px;
+            color: #3a3a3a;
+        }
+        .header-search button {
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            color: #9e7b4a;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #f5efe2 0%, #fdfbf7 100%);
+            padding: 80px 0 60px;
+            border-bottom: 1px solid #e8e0d0;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-text .tagline {
+            font-size: 1rem;
+            color: #b08a5a;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: "Songti SC", serif;
+            color: #3a2e22;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            font-size: 1.05rem;
+            color: #6b5d4e;
+            max-width: 560px;
+            margin-bottom: 28px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: #9e7b4a;
+            color: #fff;
+            border: 1px solid #9e7b4a;
+        }
+        .btn-primary:hover {
+            background: #7d5f36;
+            border-color: #7d5f36;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #5a4a3a;
+            border: 1px solid #b8a88a;
+        }
+        .btn-outline:hover {
+            border-color: #9e7b4a;
+            color: #9e7b4a;
+        }
+        .hero-visual {
+            flex: 0 0 320px;
+            height: 280px;
+            background: #e9dfcf;
+            border-radius: 50% 50% 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: #9e7b4a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        /* Section common */
+        .section {
+            padding: 70px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-family: "Songti SC", serif;
+            color: #3a2e22;
+            letter-spacing: 2px;
+        }
+        .section-title .sub {
+            font-size: 0.95rem;
+            color: #a08c72;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+        .section-title .divider {
+            width: 60px;
+            height: 3px;
+            background: #c9a87c;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Categories */
+        .categories {
+            background: #faf8f2;
+        }
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .cat-card {
+            background: #fff;
+            border: 1px solid #e8e0d0;
+            border-radius: 16px;
+            padding: 32px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+        }
+        .cat-icon {
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+        }
+        .cat-card h3 {
+            font-size: 1.2rem;
+            color: #4a3b2a;
+            margin-bottom: 10px;
+        }
+        .cat-card p {
+            font-size: 0.9rem;
+            color: #8a7a68;
+        }
+
+        /* Featured content */
+        .featured {
+            background: #ffffff;
+            border-top: 1px solid #f0eae0;
+            border-bottom: 1px solid #f0eae0;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .feature-card {
+            background: #faf8f2;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #ebe3d4;
+            transition: all 0.3s;
+        }
+        .feature-card:hover {
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+        }
+        .feature-img {
+            height: 200px;
+            background: linear-gradient(145deg, #d8cfbe, #c2b49a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+        .feature-body {
+            padding: 24px;
+        }
+        .feature-body h3 {
+            font-size: 1.25rem;
+            color: #3a2e22;
+            margin-bottom: 10px;
+        }
+        .feature-body p {
+            font-size: 0.92rem;
+            color: #6b5d4e;
+            margin-bottom: 14px;
+        }
+        .feature-meta {
+            font-size: 0.8rem;
+            color: #a08c72;
+            display: flex;
+            gap: 16px;
+        }
+
+        /* Philosophy */
+        .philosophy {
+            background: #f2ece0;
+        }
+        .philosophy-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .philosophy-text {
+            flex: 1;
+        }
+        .philosophy-text h2 {
+            font-size: 2rem;
+            font-family: "Songti SC", serif;
+            color: #3a2e22;
+            margin-bottom: 20px;
+        }
+        .philosophy-text p {
+            color: #5a4a3a;
+            margin-bottom: 16px;
+            font-size: 1.02rem;
+        }
+        .philosophy-text blockquote {
+            border-left: 4px solid #b08a5a;
+            padding: 12px 24px;
+            background: #faf8f2;
+            font-style: italic;
+            color: #6b5d4e;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .philosophy-stats {
+            flex: 0 0 360px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .stat-item {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #9e7b4a;
+            font-family: "Songti SC", serif;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: #8a7a68;
+            margin-top: 6px;
+        }
+
+        /* Latest articles */
+        .latest {
+            background: #faf8f2;
+        }
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .article-row {
+            display: flex;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #e8e0d0;
+            padding: 20px;
+            gap: 20px;
+            align-items: center;
+            transition: box-shadow 0.3s;
+        }
+        .article-row:hover {
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        }
+        .article-thumb {
+            width: 100px;
+            height: 100px;
+            background: #d8cfbe;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        .article-info {
+            flex: 1;
+        }
+        .article-info h3 {
+            font-size: 1.15rem;
+            color: #3a2e22;
+            margin-bottom: 6px;
+        }
+        .article-info p {
+            font-size: 0.9rem;
+            color: #7a6a58;
+        }
+        .article-date {
+            font-size: 0.85rem;
+            color: #a08c72;
+            white-space: nowrap;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #ffffff;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+        }
+        .faq-item {
+            padding: 20px;
+            background: #faf8f2;
+            border-radius: 12px;
+            border-left: 4px solid #c9a87c;
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #4a3b2a;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #6b5d4e;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #2b241c;
+            color: #c9bcae;
+            padding: 50px 0 30px;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #4a3a2a;
+            margin-bottom: 24px;
+        }
+        .footer-brand h3 {
+            font-size: 1.6rem;
+            font-family: "Songti SC", serif;
+            color: #e0d4c2;
+            margin-bottom: 8px;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            max-width: 280px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 60px;
+        }
+        .footer-col h4 {
+            font-size: 1rem;
+            color: #e0d4c2;
+            margin-bottom: 14px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8a7a68;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .cat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .featured-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-visual {
+                flex: none;
+                width: 240px;
+                height: 240px;
+                margin-top: 20px;
+            }
+            .philosophy-content {
+                flex-direction: column;
+            }
+            .philosophy-stats {
+                flex: none;
+                width: 100%;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 12px 0;
+                gap: 12px;
+            }
+            .site-nav {
+                order: 3;
+                width: 100%;
+                overflow-x: auto;
+            }
+            .site-nav ul {
+                gap: 20px;
+                padding-bottom: 4px;
+            }
+            .header-search {
+                display: none;
+            }
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            .cat-grid, .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            .article-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .article-thumb {
+                width: 80px;
+                height: 80px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 0 40px;
+            }
+            .section {
+                padding: 50px 0;
+            }
+            .philosophy-stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="#">比思<span>东方</span></a>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">美学</a></li>
+                    <li><a href="#">文化</a></li>
+                    <li><a href="#">器物</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">哲思</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="探寻东方之美...">
+                <button aria-label="搜索">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="tagline">东方智慧 · 生活美学</div>
+                <h1>比思东方，发现东方<br>文化之美</h1>
+                <p>我们以当代视角解读东方传统文化与生活美学，从建筑、器物到书画、服饰，从哲学思想到日常起居，深入探访东方审美与智慧在现代生活中的延续。</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">探索美学世界</a>
+                    <a href="#" class="btn btn-outline">了解比思</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                🏮
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>美学分类</h2>
+                <p class="sub">从不同维度感受东方</p>
+                <div class="divider"></div>
+            </div>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <div class="cat-icon">🏯</div>
+                    <h3>东方建筑</h3>
+                    <p>园林、庙宇、民居中的空间哲学与营造之美</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🖌️</div>
+                    <h3>书画艺术</h3>
+                    <p>水墨丹青、书法篆刻，线条与意境的美学表达</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🏺</div>
+                    <h3>器物之美</h3>
+                    <p>陶瓷、漆器、家具里的材质与工艺之道</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">👘</div>
+                    <h3>服饰风尚</h3>
+                    <p>传统服饰中的色彩、纹样与礼仪内涵</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🍵</div>
+                    <h3>茶道香事</h3>
+                    <p>饮茶、焚香、插花、挂画中的生活四艺</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">📖</div>
+                    <h3>哲思典籍</h3>
+                    <p>经史子集中的智慧与现代生活的连接</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🌿</div>
+                    <h3>自然山水</h3>
+                    <p>山水美学与寄情自然的东方生活观</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🎐</div>
+                    <h3>民俗节庆</h3>
+                    <p>岁时节令中的仪式感与民间美学</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>编辑精选</h2>
+                <p class="sub">值得细读的东方美学专题</p>
+                <div class="divider"></div>
+            </div>
+            <div class="featured-grid">
+                <div class="feature-card">
+                    <div class="feature-img">🎋</div>
+                    <div class="feature-body">
+                        <h3>宋代极简美学：留白与意境</h3>
+                        <p>从瓷器到山水画，宋代艺术中的克制与深远如何影响今天的审美。</p>
+                        <div class="feature-meta">
+                            <span>美学</span>
+                            <span>阅读 8 分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">🏮</div>
+                    <div class="feature-body">
+                        <h3>江南园林：方寸之间的宇宙</h3>
+                        <p>借景、框景、对景——造园者如何将自然山水浓缩于庭院之中。</p>
+                        <div class="feature-meta">
+                            <span>建筑</span>
+                            <span>阅读 6 分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">🍃</div>
+                    <div class="feature-body">
+                        <h3>茶席设计：从器物到心境</h3>
+                        <p>一席茶，如何通过器物的排列与选择，营造出安静而流动的氛围。</p>
+                        <div class="feature-meta">
+                            <span>生活</span>
+                            <span>阅读 5 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="section philosophy">
+        <div class="container philosophy-content">
+            <div class="philosophy-text">
+                <h2>比思东方：在传统与当代之间</h2>
+                <p>“比思”意为比较、思考与探索。我们相信东方文化不是博物馆里的静止标本，而是一种仍然活跃于当代生活中的精神资源。</p>
+                <p>从一把明式圈椅的人体工学，到一件宋代青瓷的釉色变化；从《论语》中的处世智慧，到茶室中的主客礼仪——东方美学始终关乎人与自然、人与他人、人与自我之间的关系。</p>
+                <blockquote>“东方之美，不在繁复，而在留白；不在喧哗，而在余韵。”</blockquote>
+                <p>我们以严谨而轻松的方式，记录和分享那些值得被重新看见的东方事物，邀请你一起思考：传统如何成为今天生活的一部分。</p>
+            </div>
+            <div class="philosophy-stats">
+                <div class="stat-item">
+                    <div class="stat-num">120+</div>
+                    <div class="stat-label">专题文章</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">8 类</div>
+                    <div class="stat-label">美学维度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">30+</div>
+                    <div class="stat-label">器物解读</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">6 年</div>
+                    <div class="stat-label">持续探索</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest -->
+    <section class="section latest">
+        <div class="container">
+            <div class="section-title">
+                <h2>最新内容</h2>
+                <p class="sub">不断更新的东方文化笔记</p>
+                <div class="divider"></div>
+            </div>
+            <div class="article-list">
+                <div class="article-row">
+                    <div class="article-thumb">🪷</div>
+                    <div class="article-info">
+                        <h3>明代文人书房：一间屋子的精神世界</h3>
+                        <p>书房不仅是读书写字的地方，更是文人安顿自我的空间。从书桌、书架到文房四宝，了解明代书房中的物品与秩序。</p>
+                    </div>
+                    <div class="article-date">2024.12.08</div>
+                </div>
+                <div class="article-row">
+                    <div class="article-thumb">🏺</div>
+                    <div class="article-info">
+                        <h3>青瓷之美：从越窑到龙泉的釉色演变</h3>
+                        <p>青瓷的釉色以“千峰翠色”为理想，不同时代、不同窑口呈现出微妙的差异，本文梳理青瓷审美的一条脉络。</p>
+                    </div>
+                    <div class="article-date">2024.12.01</div>
+                </div>
+                <div class="article-row">
+                    <div class="article-thumb">🎴</div>
+                    <div class="article-info">
+                        <h3>二十四节气里的东方生活智慧</h3>
+                        <p>节气不只是历法，更是一套关于如何与自然同步的生活指南。我们从中挑选几个节气，聊聊对应的起居与心境。</p>
+                    </div>
+                    <div class="article-date">2024.11.20</div>
+                </div>
+                <div class="article-row">
+                    <div class="article-thumb">🖋️</div>
+                    <div class="article-info">
+                        <h3>书法中的“气”与“势”：看懂行草的节奏</h3>
+                        <p>书法之美在于线条的流动与停顿。通过几个经典作品，理解行草书如何表达书写者的情绪与呼吸。</p>
+                    </div>
+                    <div class="article-date">2024.11.10</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于比思东方</h2>
+                <p class="sub">你可能想了解的一些事</p>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>比思东方是一个什么平台？</h3>
+                    <p>我们是一个专注于东方文化美学与生活方式的在线内容平台，通过文章、专题与图录，呈现传统美学在现代生活中的价值。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>内容主要涵盖哪些领域？</h3>
+                    <p>覆盖建筑、书画、器物、服饰、茶道、哲思、自然与节庆等八个方向，均以东方文化为核心展开。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>内容适合哪些读者？</h3>
+                    <p>对传统文化感兴趣、希望将东方美学融入生活的人士，以及从事设计、艺术、文化研究等相关工作的朋友。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何获取更多资讯？</h3>
+                    <p>你可以收藏本站，或关注后续推出的内容专题。我们也会定期更新文章与图集，保持对东方文化的持续探索。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>比思东方</h3>
+                    <p>在东方文化中发现生活的另一种可能。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>栏目</h4>
+                        <ul>
+                            <li><a href="#">东方美学</a></li>
+                            <li><a href="#">建筑园林</a></li>
+                            <li><a href="#">器物工艺</a></li>
+                            <li><a href="#">生活哲思</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>关于</h4>
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">投稿与合作</a></li>
+                            <li><a href="#">版权声明</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>关注</h4>
+                        <ul>
+                            <li><a href="#">微信公众号</a></li>
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">小红书</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 比思东方 · 保留所有权利 · 用心呈现东方之美</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+                                                     </html>
