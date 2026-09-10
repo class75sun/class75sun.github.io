@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲍鱼图片-高清鲍鱼实拍大图与海鲜食材参考图库</title>
+    <meta name="description" content="浏览鲍鱼图片大全，涵盖鲜活鲍鱼、干鲍、鲍鱼菜肴、养殖环境等高清实拍大图。提供鲍鱼外观特征、挑选技巧、烹饪应用等图文参考，适合海鲜爱好者、厨师及美食内容创作者使用。">
+    <meta name="keywords" content="鲍鱼图片,活鲍鱼照片,干鲍鱼图,鲍鱼菜肴图片,海鲜食材图,鲍鱼实拍,鲍鱼图库">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f5f7fa;
+            color: #1e2a32;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #0b3b5c 0%, #1b5a7a 100%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            background: #f3b33d;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #0b3b5c;
+        }
+        .logo-text {
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #f3b33d;
+            font-weight: 300;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+        .main-nav a {
+            color: #e0eef5;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+            padding: 4px 0;
+        }
+        .main-nav a:hover {
+            color: #f3b33d;
+            border-bottom: 2px solid #f3b33d;
+        }
+        /* Hero / 首屏 */
+        .hero-section {
+            background: linear-gradient(rgba(7, 40, 61, 0.7), rgba(7, 40, 61, 0.7)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNDUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgZmlsbD0iIzBkNGU3MCIvPjxjaXJjbGUgY3g9IjY1MCIgY3k9IjEwMCIgcj0iODAiIGZpbGw9InJnYmEoMjU1LDIzMCwxMzAsMC4xNSkiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIzMDAiIHI9IjEyMCIgZmlsbD0icmdiYSgyNTUsMjMwLDEzMCwwLjEpIi8+PHBhdGggZD0iTTAgNDUwIEw4MDAgMjUwIEw4MDAgNDUwIFoiIGZpbGw9InJnYmEoMCwwLDAsMC4yKSIvPjwvc3ZnPg==');
+            background-size: cover;
+            background-position: center;
+            padding: 70px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+        .hero-content p {
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #d4e4ed;
+            opacity: 0.9;
+        }
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .hero-tag {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #fff;
+        }
+        /* 搜索/引导 */
+        .search-bar {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-box {
+            background: white;
+            border-radius: 50px;
+            padding: 6px 6px 6px 24px;
+            display: flex;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            background: transparent;
+            color: #1e2a32;
+        }
+        .search-box button {
+            background: #f3b33d;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: 600;
+            color: #0b3b5c;
+            cursor: pointer;
+            transition: filter 0.2s;
+        }
+        .search-box button:hover {
+            filter: brightness(0.92);
+        }
+        /* 分类筛选导航 */
+        .category-section {
+            padding: 30px 0 10px;
+        }
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .cat-tab {
+            background: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1b5a7a;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            cursor: default;
+        }
+        .cat-tab.active {
+            background: #0b3b5c;
+            color: white;
+            border-color: #0b3b5c;
+        }
+        .cat-tab:hover {
+            background: #eef6fa;
+            border-color: #9bc0d0;
+        }
+        /* 图片瀑布流区域 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            padding: 40px 0 20px;
+        }
+        .gallery-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eef2f6;
+        }
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            background-color: #d9e2e9;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 12px;
+        }
+        .card-img .badge {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            backdrop-filter: blur(3px);
+        }
+        .card-img .icon {
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: default;
+        }
+        .card-content {
+            padding: 16px 18px 18px;
+        }
+        .card-content h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #0b3b5c;
+        }
+        .card-content p {
+            font-size: 0.9rem;
+            color: #4a5c66;
+            margin-bottom: 12px;
+        }
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #718096;
+            border-top: 1px solid #f0f4f8;
+            padding-top: 12px;
+        }
+        /* 内容区块 - 图文介绍 */
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            margin: 30px 0;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+        }
+        .info-section h2 {
+            font-size: 1.8rem;
+            color: #0b3b5c;
+            margin-bottom: 24px;
+            position: relative;
+            padding-left: 18px;
+        }
+        .info-section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 6px;
+            height: 28px;
+            background: #f3b33d;
+            border-radius: 6px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+        .info-item h3 {
+            font-size: 1.1rem;
+            color: #1b5a7a;
+            margin-bottom: 10px;
+        }
+        .info-item p {
+            color: #2d3f4b;
+            font-size: 0.95rem;
+        }
+        /* 挑选指南 */
+        .tips-section {
+            background: #eef6f9;
+            border-radius: 20px;
+            padding: 36px 30px;
+            margin: 30px 0;
+        }
+        .tips-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .tip-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px;
+            border-left: 6px solid #f3b33d;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .tip-card .num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0b3b5c;
+            opacity: 0.2;
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .tip-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0b3b5c;
+        }
+        .tip-card p {
+            font-size: 0.9rem;
+            color: #3d5562;
+        }
+        /* FAQ */
+        .faq-section {
+            margin: 30px 0;
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+        .faq-item {
+            border-bottom: 1px solid #e8eef3;
+            padding: 18px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #1b5a7a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.8rem;
+            color: #f3b33d;
+            font-weight: 300;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            color: #41525e;
+            font-size: 0.95rem;
+            padding-right: 40px;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #0b2b40;
+            color: #b8cdd9;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .footer-about {
+            max-width: 320px;
+        }
+        .footer-about h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .footer-links h5 {
+            color: white;
+            margin-bottom: 12px;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            color: #9bb7c6;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #f3b33d;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #1d4a63;
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 0.85rem;
+        }
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .main-nav ul {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                gap: 14px;
+            }
+            .info-section, .faq-section, .tips-section {
+                padding: 24px 18px;
+            }
+            .search-box {
+                flex-direction: column;
+                background: transparent;
+                gap: 8px;
+                border-radius: 20px;
+            }
+            .search-box input {
+                padding: 12px 18px;
+                border-radius: 40px;
+                background: white;
+            }
+            .search-box button {
+                border-radius: 40px;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .card-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">🐚</div>
+                <div class="logo-text">鲍鱼<span>图鉴</span></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#gallery">图片大全</a></li>
+                    <li><a href="#info">鲍鱼百科</a></li>
+                    <li><a href="#tips">挑选技巧</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏 Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>鲍鱼图片 · 高清实拍图库</h1>
+                    <p>从鲜活鲍鱼到珍馐佳肴，汇集多场景鲍鱼高清大图。无论你是美食创作者、海鲜爱好者还是专业厨师，这里都能帮你快速找到需要的视觉参考。</p>
+                    <div class="hero-tags">
+                        <span class="hero-tag">鲜活鲍鱼</span>
+                        <span class="hero-tag">干鲍鱼</span>
+                        <span class="hero-tag">鲍鱼菜肴</span>
+                        <span class="hero-tag">养殖环境</span>
+                        <span class="hero-tag">刺身/烹饪</span>
+                    </div>
+                    <div class="search-bar">
+                        <div class="search-box">
+                            <input type="text" placeholder="搜索鲍鱼图片类型，如：溏心干鲍" aria-label="搜索图片">
+                            <button type="button">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类标签 -->
+        <section class="category-section">
+            <div class="container">
+                <div class="category-tabs">
+                    <span class="cat-tab active">全部图片</span>
+                    <span class="cat-tab">鲜活/生鲜</span>
+                    <span class="cat-tab">干鲍/溏心</span>
+                    <span class="cat-tab">精美菜肴</span>
+                    <span class="cat-tab">养殖基地</span>
+                    <span class="cat-tab">鲍鱼细节特写</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图片瀑布流展示区 -->
+        <section id="gallery" class="container">
+            <div class="gallery-grid">
+                <!-- 卡片 1 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #6b8e9c, #1f4a5e); background-blend-mode: overlay;">
+                        <span class="badge">鲜活 · 皱纹盘鲍</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>鲜活皱纹盘鲍</h3>
+                        <p>壳面深褐，生长线明显，足部肥厚有力。适合清蒸、刺身。</p>
+                        <div class="meta-row">
+                            <span>📷 实拍 · 自然光</span>
+                            <span>分辨率 2400×1600</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 2 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #8c7a5b, #4a3f2e); background-blend-mode: overlay;">
+                        <span class="badge">干鲍 · 溏心</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>溏心干鲍（南非/澳洲）</h3>
+                        <p>经长时间晾晒与陈化，中心呈半透明溏心状，香气浓郁。</p>
+                        <div class="meta-row">
+                            <span>📷 专业棚拍</span>
+                            <span>细节微距</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 3 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #d4a373, #8f5e33); background-blend-mode: overlay;">
+                        <span class="badge">名菜 · 鲍汁扣</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>鲍汁扣辽参/花菇</h3>
+                        <p>经典粤式宴客菜，鲍汁亮泽，摆盘精致，诱人食欲。</p>
+                        <div class="meta-row">
+                            <span>🍽 餐厅出品</span>
+                            <span>美食摄影</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 4 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #2f6d80, #0b3b5c); background-blend-mode: overlay;">
+                        <span class="badge">养殖 · 海区</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>深海养殖基地</h3>
+                        <p>福建、大连等海域的鲍鱼养殖区，水质清澈，饵料丰富。</p>
+                        <div class="meta-row">
+                            <span>🌊 环境实拍</span>
+                            <span>无人机航拍</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 5 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #b07d62, #5c3a2e); background-blend-mode: overlay;">
+                        <span class="badge">特写 · 足部</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>鲍鱼足部特写</h3>
+                        <p>强壮的腹足吸附力强，肉质紧实，纹理清晰可见。</p>
+                        <div class="meta-row">
+                            <span>🔬 微距镜头</span>
+                            <span>纹理细节</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 6 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #6a994e, #386641); background-blend-mode: overlay;">
+                        <span class="badge">菜肴 · 清蒸</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>蒜蓉粉丝蒸鲍鱼</h3>
+                        <p>家常宴客热门做法，鲜甜弹牙，蒜香四溢。</p>
+                        <div class="meta-row">
+                            <span>🍳 家常菜</span>
+                            <span>成品实拍</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 7 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #bc6c25, #7f4f1d); background-blend-mode: overlay;">
+                        <span class="badge">干鲍 · 礼盒</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>鲍鱼礼盒装</h3>
+                        <p>节日馈赠佳品，包装精美，多用于高端伴手礼。</p>
+                        <div class="meta-row">
+                            <span>🎁 商品图</span>
+                            <span>商业摄影</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡片 8 -->
+                <div class="gallery-card">
+                    <div class="card-img" style="background-image: linear-gradient(135deg, #415a77, #1b263b); background-blend-mode: overlay;">
+                        <span class="badge">鲍鱼 · 刺身</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>鲜活鲍鱼刺身</h3>
+                        <p>冰镇后切片，口感爽脆清甜，高级日料常见。</p>
+                        <div class="meta-row">
+                            <span>🍣 日料出品</span>
+                            <span>精美摆盘</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; padding: 10px 0 30px;">
+                <span style="background: #e8f0f5; padding: 10px 28px; border-radius: 50px; color: #1b5a7a; font-size: 0.95rem; display: inline-block;">以上为精选鲍鱼实拍风格预览 · 完整图库持续更新</span>
+            </div>
+        </section>
+
+        <!-- 鲍鱼百科介绍 -->
+        <section id="info" class="container">
+            <div class="info-section">
+                <h2>认识鲍鱼：从海洋到餐桌</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>🐚 鲍鱼是什么？</h3>
+                        <p>鲍鱼虽称“鱼”，实为单壳海生贝类，属腹足纲。自古位列“海八珍”，以足部肌肉为食用主体，肉质细嫩、营养丰富。</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🌍 主要产地</h3>
+                        <p>我国辽宁、山东、福建、广东为主要养殖区；国外如南非、澳大利亚、新西兰、日本等地也出产优质鲍鱼。不同海域的鲍鱼在外观和风味上略有差异。</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🍽 常见做法</h3>
+                        <p>清蒸、蒜蓉蒸、鲍鱼红烧肉、鲍汁捞饭、刺身、炖汤等。干鲍则需提前泡发，常用于高档宴席的“溏心鲍鱼”。</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📸 图片应用场景</h3>
+                        <p>餐饮菜单设计、美食博客配图、海鲜科普文章、广告海报、产品包装等。高清实拍图能直观传递新鲜度与品质感。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 挑选技巧 -->
+        <section id="tips" class="container">
+            <div class="tips-section">
+                <h2 style="font-size: 1.8rem; color: #0b3b5c; margin-bottom: 24px; padding-left: 18px; position: relative;">鲍鱼挑选与查看要点</h2>
+                <div class="tips-list">
+                    <div class="tip-card">
+                        <span class="num">01</span>
+                        <h3>看活力</h3>
+                        <p>鲜活鲍鱼触碰后足部会收缩，吸附力强。若完全不动或开口过大，则新鲜度存疑。</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="num">02</span>
+                        <h3>看外壳</h3>
+                        <p>外壳完整、无破损，颜色呈青褐或暗红并带有石灰质纹理，说明生长环境较好。</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="num">03</span>
+                        <h3>看肉质</h3>
+                        <p>鲍鱼肉色应为淡黄或乳白，饱满有弹性。若发暗或干瘪，可能不新鲜。</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="num">04</span>
+                        <h3>闻气味</h3>
+                        <p>新鲜鲍鱼有淡淡的海水咸鲜味，不应有腥臭或氨味。</p>
+                    </div>
+                </div>
+                <p style="margin-top: 28px; background: rgba(255,255,255,0.7); padding: 14px 18px; border-radius: 12px; font-size: 0.95rem; color: #2d4c5e;"><strong>图片参考说明：</strong> 选购时可将实物与图库中的鲜活鲍鱼照片进行比对，注意观察足部边缘的裙边是否完整、颜色是否自然。</p>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq" class="container">
+            <div class="faq-section">
+                <h2 style="font-size: 1.8rem; color: #0b3b5c; margin-bottom: 24px; padding-left: 18px; position: relative;">关于鲍鱼图片的常见疑问</h2>
+                <div class="faq-item">
+                    <div class="faq-question">鲍鱼图片可以免费商用吗？</div>
+                    <div class="faq-answer">本站展示的鲍鱼图片仅作预览与风格参考。如需高清原图用于商业用途，建议通过正规图库购买授权或联系版权方获取许可。个人学习、非商业标注来源可酌情使用。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何根据图片判断鲍鱼的新鲜度？</div>
+                    <div class="faq-answer">观察鲍鱼足部是否饱满有光泽，颜色是否呈现自然的淡黄或乳白色。若图片中鲍鱼表面过于暗淡、干瘪，或壳肉分离明显，往往意味着新鲜度欠佳。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">干鲍和鲜鲍在外观图片上有哪些区别？</div>
+                    <div class="faq-answer">鲜鲍外壳湿润、颜色鲜活，足部肥大；干鲍经过脱水后外壳干爽、颜色偏深，肉体会呈现半透明或溏心质感，表面有细微裂纹或皱褶。两者在视觉上差异明显。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">哪里可以找到更多高清鲍鱼实拍图？</div>
+                    <div class="faq-answer">专业图库（如Shutterstock、Getty Images）或国内视觉素材平台均有大量鲍鱼高清图。另外可关注海鲜美食博主、水产养殖企业的原创图片，但注意获取授权。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">鲍鱼菜肴的摆盘图片对餐厅菜单设计有帮助吗？</div>
+                    <div class="faq-answer">有帮助。精美的鲍鱼菜肴实拍图能直观展示菜品的诱人色泽与分量，提升菜单档次，帮助顾客快速决策。建议选择光线自然、背景简洁的图片。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>🐚 鲍鱼图鉴</h4>
+                    <p>一个专注于鲍鱼视觉参考与知识分享的图库网站。我们收集整理鲍鱼在不同状态下的真实影像，为美食、餐饮、水产行业从业者及爱好者提供便利。</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h5>图片分类</h5>
+                        <ul>
+                            <li><a href="#">鲜活鲍鱼</a></li>
+                            <li><a href="#">干鲍系列</a></li>
+                            <li><a href="#">鲍鱼名菜</a></li>
+                            <li><a href="#">养殖环境</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>更多资源</h5>
+                        <ul>
+                            <li><a href="#">鲍鱼知识</a></li>
+                            <li><a href="#">挑选指南</a></li>
+                            <li><a href="#">版权说明</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 鲍鱼图鉴 Abalone Gallery. 本网站图片均用于参考展示，商业使用请获取授权。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
